@@ -1,0 +1,3 @@
+URL: http://api.akadoctors.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Labrador_on_Quantock_%282175262184%29.jpg/1280px-Labrador_on_Quantock_%282175262184%29.jpg
+
+or (img-filter-diego-dev.us-east-1.elasticbeanstalk.com)
