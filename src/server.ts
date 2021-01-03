@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles, checkURLFormat} from './util/util';
 
@@ -15,7 +15,7 @@ import {filterImageFromURL, deleteLocalFiles, checkURLFormat} from './util/util'
 
   // /filteredimage?image_url="https//..."
   // filters an image from URL
-  app.get("/filteredimage", async (req, res) => {
+  app.get("/filteredimage", async (req: Request, res: Response) => {
     try {
       const { image_url } = req.query;
       // check image_url exists
@@ -35,7 +35,7 @@ import {filterImageFromURL, deleteLocalFiles, checkURLFormat} from './util/util'
   
   // Root Endpoint
   // Displays a simple message to the user
-  app.get( "/", async ( req, res ) => {
+  app.get( "/", async ( req: Request, res: Response ) => {
     res.send("try GET /filteredimage?image_url={{}}")
   } );
   
